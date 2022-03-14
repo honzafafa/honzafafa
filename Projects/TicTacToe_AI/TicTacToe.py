@@ -1,7 +1,7 @@
 import numpy as np
-import TTT_robot_01
+import TTT_agent_01
 import TTT_functions
-import TTT_robot_02
+import TTT_agent_02
 
 Board = np.array([["1","2","3"],
                   ["4","5","6"],
@@ -39,12 +39,12 @@ def play_robot_easy():
         symbol_p = "X"
         symbol_r = "O"
         print("human starts!!")
-        TTT_robot_01.plr_human_first(symbol_p, symbol_r, Board)
+        TTT_agent_01.plr_human_first(symbol_p, symbol_r, Board)
     elif ask == "O":
         symbol_p = "O"
         symbol_r = "X"
         print("robot starts!!")
-        TTT_robot_01.plr_robot_first(symbol_p, symbol_r, Board)
+        TTT_agent_01.plr_robot_first(symbol_p, symbol_r, Board)
     else:
         print("wrong choice")
 
@@ -56,12 +56,12 @@ def play_robot_hard():
         symbol_p = "X"
         symbol_r = "O"
         print("human starts!!")
-        TTT_robot_02.plr2_human_first(symbol_p, symbol_r, Board)
+        TTT_agent_02.plr2_human_first(symbol_p, symbol_r, Board)
     elif ask == "O":
         symbol_p = "O"
         symbol_r = "X"
         print("robot starts!!")
-        TTT_robot_02.plr_robot_first(symbol_p, symbol_r, Board)
+        TTT_agent_02.plr_robot_first(symbol_p, symbol_r, Board)
     else:
         print("wrong choice")
 
